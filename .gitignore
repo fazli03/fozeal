@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# build output
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets — never commit, set these in the Vercel dashboard instead
+.env*
+
+# local tool state
+.vercel
+.claude/settings.local.json
+
+# os
+.DS_Store
+Thumbs.db

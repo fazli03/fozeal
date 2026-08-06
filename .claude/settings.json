@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-Process -Name node -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(cd \"d:\\\\Porto\\\\PORTO BARU'\\\\portfolio_1\\\\portfolio\"; $env:PORT='3322'; npx next start)"
+    ]
+  }
+}
