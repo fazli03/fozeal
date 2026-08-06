@@ -22,8 +22,8 @@ export const projects: Project[] = [
       role: ["Product Designer"],
       tools: ["Figma"],
       prototypeUrl:
-        "https://www.figma.com/proto/xxxxx/Santrendcode?node-id=1-2",
-      duration: "3 bulan",
+        "https://www.figma.com/proto/UxkiQDzOUEYMeDK6bowJ69/SantrendCode?node-id=171-2287&p=f&viewport=712%2C1164%2C0.02&t=lWJgwtYMuupdCq3g-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=171%3A2287&page-id=171%3A2146",
+      duration: "2 weeks",
     },
 
     problems: [
@@ -60,7 +60,7 @@ export const projects: Project[] = [
           "browser",
           "Full landing page, top to bottom",
           1728,
-          7551,
+          4208,
         ),
       ]),
 
@@ -70,7 +70,7 @@ export const projects: Project[] = [
           "browser",
           "Full landing page, top to bottom",
           1728,
-          7551,
+          6505,
         ),
       ]),
       screenGroup("detail materi", "Detail Materi", [
@@ -79,7 +79,7 @@ export const projects: Project[] = [
           "browser",
           "Full landing page, top to bottom",
           1728,
-          7551,
+          1117,
         ),
       ]),
       screenGroup("learning progres", "Learning Progres", [
@@ -88,7 +88,7 @@ export const projects: Project[] = [
           "browser",
           "Full landing page, top to bottom",
           1728,
-          7551,
+          2006,
         ),
       ]),
       screenGroup("devtalks page", "Devtalks Page", [
@@ -97,7 +97,7 @@ export const projects: Project[] = [
           "browser",
           "Full landing page, top to bottom",
           1728,
-          7551,
+          3887,
         ),
       ]),
     ],
@@ -152,7 +152,7 @@ export const projects: Project[] = [
           "browser",
           "Introduction screen",
           1728,
-          1117,
+          5842,
         ),
       ]),
       screenGroup(" assesment screen", "Assesment Screen", [
@@ -181,8 +181,8 @@ export const projects: Project[] = [
           "Pandu Divisi/Recommendation Results.webp",
           "browser",
           "Recommendation Results",
-          1728,
-          1117,
+          1731,
+          2051,
         ),
       ]),
       screenGroup("detail division", "Detail Division", [
@@ -191,7 +191,7 @@ export const projects: Project[] = [
           "browser",
           "Introduction screen",
           1728,
-          1117,
+          3162,
         ),
       ]),
       screenGroup("catalog division", "Catalog Division", [
@@ -200,7 +200,7 @@ export const projects: Project[] = [
           "browser",
           "Introduction screen",
           1728,
-          1117,
+          3818,
         ),
       ]),
     ],
@@ -365,7 +365,7 @@ export const projects: Project[] = [
           "phone",
           "Home with nearby routes",
           402,
-          962,
+          874,
         ),
       ]),
       screenGroup("detail", "Detail Route", [
@@ -373,8 +373,8 @@ export const projects: Project[] = [
           "Jalan Kita/Detail Route.png",
           "phone",
           "Home with nearby routes",
-          402,
-          962,
+          395,
+          1579,
         ),
       ]),
       screenGroup("live", "Live Tracking", [
@@ -382,8 +382,8 @@ export const projects: Project[] = [
           "Jalan Kita/Live Tracking.webp",
           "phone",
           "Home with nearby routes",
-          402,
-          962,
+          395,
+          1010,
         ),
       ]),
       screenGroup("Finish", "Finish Page", [

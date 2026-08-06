@@ -24,7 +24,7 @@ export const site = {
   email: EMAIL as Sourced<string>,
   /** Where every "write to me" link goes. See lib/mail.ts for why not mailto. */
   composeUrl: gmailComposeUrl(EMAIL),
-  url: "https://example.com",
+  url: "https://fozeal.com",
 
   /** The thesis line in the hero. Rewritten for clarity, meaning preserved. */
   thesis:
