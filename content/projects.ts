@@ -64,7 +64,7 @@ export const projects: Project[] = [
         ),
       ]),
 
-      screenGroup("we roadmap", "We Roadmap", [
+      screenGroup("we roadmap", "We Roadmap Page", [
         image(
           "SantrendCode/We Roadmap Page utama.png",
           "browser",
@@ -73,7 +73,7 @@ export const projects: Project[] = [
           6505,
         ),
       ]),
-      screenGroup("detail materi", "Detail Materi", [
+      screenGroup("detail course", "Detail Course Page", [
         image(
           "SantrendCode/Detail Materi.webp",
           "browser",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
           1117,
         ),
       ]),
-      screenGroup("learning progres", "Learning Progres", [
+      screenGroup("learning progres", "Learning Progress Page", [
         image(
           "SantrendCode/Proges Pembelajaran.webp",
           "browser",
@@ -185,7 +185,7 @@ export const projects: Project[] = [
           2051,
         ),
       ]),
-      screenGroup("detail division", "Detail Division", [
+      screenGroup("detail division", "Detail Division Page", [
         image(
           "Pandu Divisi/Detail Education Technology 2.png",
           "browser",
@@ -194,7 +194,7 @@ export const projects: Project[] = [
           3162,
         ),
       ]),
-      screenGroup("catalog division", "Catalog Division", [
+      screenGroup("catalog division", "Catalog Divisio Page", [
         image(
           "Pandu Divisi/Katalog halaman divisi.png",
           "browser",
