@@ -133,7 +133,7 @@ export const projects: Project[] = [
     category: "Recommendation Platform",
     accent: "91 52 232",
     cover: image(
-      "Pandu Divisi/mokup PD.png",
+      "Pandu Divisi/mockup PD.png",
       "bleed",
       "Pandu Divisi recommendation platform shown in a device mockup",
       1536,
