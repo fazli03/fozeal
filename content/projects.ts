@@ -10,11 +10,11 @@ export const projects: Project[] = [
     category: "Education Platform",
     accent: "23 107 74",
     cover: image(
-      "SantrendCode/Mockup SantrendCode.webp",
+      "SantrendCode/mockup sc.png",
       "bleed",
       "Santrendcode learning platform shown across desktop and mobile mockups",
-      5217,
-      3140,
+      1209,
+      880,
     ),
     meta: {
       ...meta("Education Platform"),
@@ -111,11 +111,11 @@ export const projects: Project[] = [
     category: "Recommendation Platform",
     accent: "91 52 232",
     cover: image(
-      "Pandu Divisi/Mockup Pandu Divisi.webp",
+      "Pandu Divisi/mockup PD.png",
       "bleed",
       "Pandu Divisi recommendation platform shown in a device mockup",
-      4000,
-      3000,
+      553,
+      451,
     ),
 
     meta: {
