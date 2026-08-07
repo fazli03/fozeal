@@ -81,9 +81,12 @@ export const site = {
     {
       label: "CV",
       kind: "download",
-      href: "/assets/cv/CV_FAZLI MAULANA.pdf",
+      /* One CV, one path. It lives in public/cv rather than public/assets,
+         which holds design exports — and there is deliberately no second copy
+         anywhere, because the moment there are two the wrong one gets served. */
+      href: "/cv/CV%20Fazli%20Maulana.pdf",
       /** The name the browser saves it under, whatever the file is called. */
-      fileName: "CV_FAZLI MAULANA.pdf",
+      fileName: "CV Fazli Maulana.pdf",
       icon: mark("/assets/Footer/file-cv 1.svg"),
     },
   ],
