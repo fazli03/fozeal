@@ -194,7 +194,7 @@ export const projects: Project[] = [
           3162,
         ),
       ]),
-      screenGroup("catalog division", "Catalog Divisio Page", [
+      screenGroup("catalog division", "Catalog Division Page", [
         image(
           "Pandu Divisi/Katalog halaman divisi.png",
           "browser",
