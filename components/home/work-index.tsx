@@ -58,7 +58,10 @@ export function WorkIndex() {
               style={{ x: sx, y: sy }}
               className="pointer-events-none absolute left-0 top-0 z-20 hidden w-[400px] lg:block"
             >
-              <AssetFrame asset={projects[active].cover} sizes="400px" />
+              <AssetFrame
+                asset={projects[active].preview ?? projects[active].cover}
+                sizes="400px"
+              />
             </motion.div>
           )}
         </AnimatePresence>
@@ -101,9 +104,10 @@ export function WorkIndex() {
                   />
                 </div>
 
-                {/* Cover shows inline where there is no cursor to follow. */}
+                {/* The same preview, shown inline where there is no cursor to
+                    follow it. Still the index's image, not the case study's. */}
                 <div className="shell pb-8 lg:hidden">
-                  <AssetFrame asset={project.cover} sizes="100vw" />
+                  <AssetFrame asset={project.preview ?? project.cover} sizes="100vw" />
                 </div>
               </Link>
             </li>

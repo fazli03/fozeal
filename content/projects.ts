@@ -1,6 +1,21 @@
 import type { Project } from "./schema";
 import { image, meta, problem, screenGroup, solution } from "./_helpers";
 
+/**
+ * COVER vs PREVIEW
+ *
+ * `cover`   opens the case study, full page width.
+ * `preview` is what the work index shows under the cursor, 400px wide.
+ *
+ * They are separate because they are read at completely different sizes. Drop
+ * a file into the project's folder and point `preview` at it:
+ *
+ *   preview: image('SantrendCode/preview.png', 'bleed', 'alt text', W, H),
+ *
+ * Leave `preview` out and the index falls back to the cover, which is what
+ * every project does today.
+ */
+
 export const projects: Project[] = [
   /* ===================================================================== 01 */
   {

@@ -214,7 +214,18 @@ export interface Project {
   category: string
   /** Identity colour, applied as --accent across the case study. */
   accent: string
+  /** The full-width image opening the case study. */
   cover: Asset
+  /**
+   * The small image the work index shows under the cursor. Optional: with no
+   * preview of its own a project falls back to its cover, so this only needs
+   * setting where the two should differ.
+   *
+   * They usually should. The cover is read at full page width and can afford
+   * detail; the preview is 400px wide and appears for a second under a moving
+   * cursor, so it wants a tighter, simpler crop that survives being small.
+   */
+  preview?: Asset
   /** Read by the closing CTA. Fields left null are omitted, never padded. */
   meta: ProjectMeta
   problems: ProblemStatement[]
