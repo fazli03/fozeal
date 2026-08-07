@@ -27,8 +27,7 @@ export const site = {
   url: "https://fozeal.com",
 
   /** The thesis line in the hero. Rewritten for clarity, meaning preserved. */
-  thesis:
-    "I design digital products end to end — research, structure, interface, and the small decisions in between that make a thing feel considered.",
+  thesis: "The best interfaces are the ones people never have to think about.",
 
   availability: "Open to UI/UX design roles and freelance work",
 
