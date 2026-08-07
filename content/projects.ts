@@ -25,11 +25,18 @@ export const projects: Project[] = [
     category: "Education Platform",
     accent: "23 107 74",
     cover: image(
-      "SantrendCode/mockup sc.png",
+      "SantrendCode/mockup SanC.png",
       "bleed",
       "Santrendcode learning platform shown across desktop and mobile mockups",
-      1209,
-      880,
+      1536,
+      1024,
+    ),
+    preview: image(
+      "SantrendCode/preview sanc.png",
+      "bleed",
+      "Santrendcode preview",
+      1536,
+      1024,
     ),
     meta: {
       ...meta("Education Platform"),
@@ -126,13 +133,19 @@ export const projects: Project[] = [
     category: "Recommendation Platform",
     accent: "91 52 232",
     cover: image(
-      "Pandu Divisi/mockup PD.png",
+      "Pandu Divisi/mokup PD.png",
       "bleed",
       "Pandu Divisi recommendation platform shown in a device mockup",
-      553,
-      451,
+      1536,
+      1024,
     ),
-
+    preview: image(
+      "Pandu Divisi/preview pd.png",
+      "bleed",
+      "Pandu Divisi preview",
+      1536,
+      1024,
+    ),
     meta: {
       ...meta("Recommendation Platform"),
       platform: "Web application",
@@ -229,13 +242,19 @@ export const projects: Project[] = [
     category: "Company Profile Website",
     accent: "184 50 42",
     cover: image(
-      "Mayang Mangurai Auto Variasi/Mockup Mayang Mangurai Auto Variasi.webp",
+      "Mayang Mangurai Auto Variasi/mockup MM.png",
       "bleed",
       "Mayang Mangurai Auto Variasi website shown in a device mockup",
+      1448,
+      1086,
+    ),
+    preview: image(
+      "Mayang Mangurai Auto Variasi/preview mm.webp",
+      "bleed",
+      "Mayang Mangurai Auto Variasi preview",
       1195,
       896,
     ),
-
     meta: {
       ...meta("Company Profile Website"),
       platform: "Web application",
@@ -275,20 +294,6 @@ export const projects: Project[] = [
           ],
         },
       ),
-      solution(
-        "s2",
-        "p2",
-        [
-          image(
-            "Mayang Mangurai Auto Variasi/Sevice Detail Screen.webp",
-            "browser",
-            "Service detail page",
-            1728,
-            2189,
-          ),
-        ],
-        { title: null, detail: null },
-      ),
     ],
     screens: [
       screenGroup("work", "Projects & gallery", [
@@ -307,6 +312,15 @@ export const projects: Project[] = [
           4327,
         ),
       ]),
+      screenGroup("work", "Service Detail", [
+        image(
+          "Mayang Mangurai Auto Variasi/Sevice Detail Screen.webp",
+          "browser",
+          "Project detail page",
+          1728,
+          2189,
+        ),
+      ]),
     ],
   },
 
@@ -318,11 +332,18 @@ export const projects: Project[] = [
     category: "Smart Mobility Application",
     accent: "11 124 140",
     cover: image(
-      "Jalan Kita/Mockup Jalan Kita.webp",
+      "Jalan Kita/mockup jk.png",
       "bleed",
       "JalanKita mobility app shown in a phone mockup",
-      1169,
-      1345,
+      1086,
+      1448,
+    ),
+    preview: image(
+      "Jalan Kita/preview.png",
+      "bleed",
+      "Mayang Mangurai Auto Variasi preview",
+      433,
+      577,
     ),
     meta: {
       ...meta("Smart Mobility Application"),
@@ -343,26 +364,13 @@ export const projects: Project[] = [
       }),
     ],
     solutions: [
-      solution(
-        "s1",
-        "p1",
-        [
-          image(
-            "Jalan Kita/Opsi Rute.webp",
-            "phone",
-            "Route options for a journey",
-            402,
-            874,
-          ),
+      solution("s1", "p1", [], {
+        title:
+          "A multimodal navigation platform that brings every stage of the journey into one seamless experience.",
+        detail: [
+          "JalanKita was designed as a multimodal navigation application that integrates various public transportation services into a single platform. By providing personalized route recommendations, transparent fare information, real-time journey guidance, and an AI travel assistant, the app enables users to plan, navigate, and complete their trips more efficiently, confidently, and with fewer disruptions.",
         ],
-        {
-          title:
-            "A multimodal navigation platform that brings every stage of the journey into one seamless experience.",
-          detail: [
-            "JalanKita was designed as a multimodal navigation application that integrates various public transportation services into a single platform. By providing personalized route recommendations, transparent fare information, real-time journey guidance, and an AI travel assistant, the app enables users to plan, navigate, and complete their trips more efficiently, confidently, and with fewer disruptions.",
-          ],
-        },
-      ),
+      }),
     ],
     screens: [
       screenGroup("plan", "Plan a trip", [
