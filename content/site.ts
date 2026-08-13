@@ -84,7 +84,11 @@ export const site = {
       /* One CV, one path. It lives in public/cv rather than public/assets,
          which holds design exports — and there is deliberately no second copy
          anywhere, because the moment there are two the wrong one gets served. */
-      href: "/cv/CV%20Fazli%20Maulana.pdf",
+      /* Lowercase and hyphenated on purpose. Windows treats filenames as
+         case-insensitive and Vercel's Linux hosts do not, so a name whose
+         capitals drift — "CV FAZLI MAULANA.pdf" in git against "CV Fazli
+         Maulana.pdf" on disk — resolves locally and 404s in production. */
+      href: "/cv/cv-fazli-maulana.pdf",
       /** The name the browser saves it under, whatever the file is called. */
       fileName: "CV Fazli Maulana.pdf",
       icon: mark("/assets/Footer/file-cv 1.svg"),
