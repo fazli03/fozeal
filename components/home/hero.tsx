@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
 import { site } from "@/content/site";
 import { about } from "@/content/about";
 import { AssetFrame } from "@/components/system/asset-frame";
@@ -92,26 +91,6 @@ export function Hero() {
             >
               {site.thesis}
             </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: duration.base, ease, delay: 0.85 }}
-              className="mt-12 flex items-center gap-3 font-mono text-micro uppercase text-graphite"
-            >
-              <motion.span
-                animate={{ y: [0, 5, 0] }}
-                transition={{
-                  duration: 2.2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="inline-flex"
-              >
-                <ArrowDown size={14} aria-hidden />
-              </motion.span>
-              Four projects below
-            </motion.div>
           </div>
 
           {/* Portrait */}

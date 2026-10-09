@@ -64,18 +64,6 @@ export function ProblemSolutionBlock({
                   />
                 </div>
               </div>
-
-              {answer?.assets?.length ? (
-                <div className="mt-10 grid gap-8 md:grid-cols-2">
-                  {answer.assets.map((a) => (
-                    <AssetFrame
-                      key={a.expected}
-                      asset={a}
-                      sizes="(max-width: 768px) 100vw, 45vw"
-                    />
-                  ))}
-                </div>
-              ) : null}
             </li>
           )
         })}

@@ -22,12 +22,12 @@ export const projects: Project[] = [
     slug: "santrendcode",
     index: "01",
     title: "Santrendcode",
-    category: "Education Platform",
+    category: "Coding Learning Platform",
     accent: "23 107 74",
     cover: image(
       "SantrendCode/mockup SanC.png",
       "bleed",
-      "Santrendcode learning platform shown across desktop and mobile mockups",
+      "Santrendcode coding learning platform shown across desktop mockups",
       1536,
       1024,
     ),
@@ -39,7 +39,7 @@ export const projects: Project[] = [
       1024,
     ),
     meta: {
-      ...meta("Education Platform"),
+      ...meta("Coding Learning Platform"),
       platform: "Web application",
       role: ["Product Designer"],
       tools: ["Figma"],
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     slug: "pandu-divisi",
     index: "02",
     title: "Pandu Divisi",
-    category: "Recommendation Platform",
+    category: "Recommendation Division Platform",
     accent: "91 52 232",
     cover: image(
       "Pandu Divisi/mockup PD.png",
@@ -147,7 +147,7 @@ export const projects: Project[] = [
       1024,
     ),
     meta: {
-      ...meta("Recommendation Platform"),
+      ...meta("Recommendation Division Platform"),
       platform: "Web application",
       role: ["Product Designer"],
       tools: ["Figma"],
@@ -239,7 +239,7 @@ export const projects: Project[] = [
     slug: "mm-auto-variasi",
     index: "03",
     title: "MM Auto Variasi",
-    category: "Company Profile Website",
+    category: "Business Profile Website",
     accent: "184 50 42",
     cover: image(
       "Mayang Mangurai Auto Variasi/mockup MM.png",
@@ -256,7 +256,7 @@ export const projects: Project[] = [
       896,
     ),
     meta: {
-      ...meta("Company Profile Website"),
+      ...meta("Business Profile Website"),
       platform: "Web application",
       role: ["UI/UX Designer"],
       tools: ["Figma"],
