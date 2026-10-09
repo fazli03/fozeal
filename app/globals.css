@@ -48,9 +48,11 @@
   html.lenis {
     scroll-behavior: auto;
   }
+
   html.lenis body {
     height: auto;
   }
+
   .lenis.lenis-smooth [data-lenis-prevent] {
     overscroll-behavior: contain;
   }
@@ -73,7 +75,10 @@
     border-radius: 2px;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply font-display;
     font-variation-settings: 'wdth' 112;
     text-wrap: balance;
@@ -96,6 +101,7 @@
 }
 
 @layer components {
+
   /* ---- Signature: the canvas frame system -------------------------------
      Every major region is labelled the way a frame is labelled on a design
      canvas. It encodes real structure (region name + its role), so it is
@@ -117,6 +123,7 @@
   .selectable {
     position: relative;
   }
+
   .selectable::after {
     content: '';
     position: absolute;
@@ -125,6 +132,7 @@
     border: 1px solid transparent;
     transition: border-color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   }
+
   .selectable:hover::after,
   .selectable:focus-within::after {
     border-color: rgb(var(--accent) / 0.55);
@@ -154,6 +162,7 @@
     background-repeat: no-repeat;
     transition: background-size 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   }
+
   .hover-underline:hover,
   .hover-underline:focus-visible {
     background-size: 100% 1px;
@@ -164,12 +173,15 @@
   .text-balance {
     text-wrap: balance;
   }
+
   .mask-fade-b {
     mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
   }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
   .no-scrollbar {
     scrollbar-width: none;
   }
@@ -177,6 +189,7 @@
 
 /* ---- Reduced motion: the quality floor, not an afterthought ------------- */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

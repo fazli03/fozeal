@@ -33,6 +33,7 @@ export const site = {
 
   nav: [
     { href: "/#work", label: "Work" },
+    { href: "/#skills-tools", label: "Skills & Tools" },
     { href: "/about", label: "About" },
     { href: "/#contact", label: "Contact" },
   ],
@@ -165,6 +166,85 @@ export const site = {
       body: "I conduct simple usability testing, collect feedback, and iterate on the design to improve both the user experience and visual quality.",
     },
   ],
+
+  /**
+   * Skills and Tools for UI/UX & Product Designer.
+   * You can easily update these dummy values with your own details!
+   */
+  skillsAndTools: {
+    skills: [
+      {
+        no: "01",
+        category: "UX Research & Strategy",
+        tag: "DISCOVERY & IA",
+        description: "Uncovering user needs, mapping workflows, and establishing structural foundations before visual execution.",
+        items: [
+          { name: "User Research & Interviews", level: "Advanced", desc: "Qualitative research & user insights gathering" },
+          { name: "Information Architecture (IA)", level: "Advanced", desc: "Sitemaps, navigation models & content hierarchy" },
+          { name: "User Journey Mapping & Flows", level: "Advanced", desc: "End-to-end task flows & scenario mapping" },
+          { name: "Usability Testing & Audits", level: "Intermediate", desc: "Heuristic evaluation & feedback iteration" },
+          { name: "Product Discovery & Strategy", level: "Advanced", desc: "Problem definition & business value alignment" },
+          { name: "Competitor & Market Analysis", level: "Advanced", desc: "Benchmarking UI patterns & market positioning" },
+        ],
+      },
+      {
+        no: "02",
+        category: "UI & Interaction Design",
+        tag: "INTERFACE SYSTEMS",
+        description: "Crafting modern, accessible, and responsive user interfaces powered by unified design tokens.",
+        items: [
+          { name: "Design Systems & Tokens", level: "Expert", desc: "Scalable component libraries & style guides" },
+          { name: "High-Fidelity Wireframing", level: "Expert", desc: "Pixel-perfect screen layouts & component design" },
+          { name: "Interactive Prototyping", level: "Advanced", desc: "Clickable prototypes & realistic user flows" },
+          { name: "Mobile App UI Design (iOS / Android)", level: "Expert", desc: "Native design guidelines & touch ergonomics" },
+          { name: "Responsive Web Design", level: "Expert", desc: "Fluid layouts across desktop, tablet & mobile" },
+          { name: "Micro-Interactions & Motion", level: "Intermediate", desc: "Subtle animations for UX feedback & polish" },
+        ],
+      },
+      {
+        no: "03",
+        category: "Product Thinking & Handoff",
+        tag: "EXECUTION & QA",
+        description: "Bridging business goals, user satisfaction, and technical feasibility through clean developer handoffs.",
+        items: [
+          { name: "Feature Prioritization", level: "Advanced", desc: "MVP scoping & MoSCoW prioritization" },
+          { name: "Developer Specs & Handoff", level: "Expert", desc: "Figma specs, token mapping & redlines" },
+          { name: "Design QA & Visual Reviews", level: "Advanced", desc: "Ensuring implementation matches design intent" },
+          { name: "Agile & Design Sprints", level: "Intermediate", desc: "Cross-functional team collaboration & iteration" },
+        ],
+      },
+    ],
+    tools: [
+      {
+        category: "Core Design & Prototyping",
+        items: [
+          { name: "Figma", role: "Primary UI/UX & Design Systems", icon: mark("/assets/About/Figma.webp", 24, 24), badge: "Daily Tool" },
+          { name: "FigJam", role: "Brainstorming & User Flows", badge: "Workshops" },
+          { name: "Framer", role: "Interactive Web & Portfolios", badge: "Prototyping" },
+          { name: "Canva & Adobe CC", role: "Graphic Assets & Brand Design", icon: mark("/assets/About/Canva.svg", 24, 24), badge: "Visual Assets" },
+          { name: "ProtoPie", role: "Advanced Micro-Interactions", badge: "Motion" },
+        ],
+      },
+      {
+        category: "Productivity & Collaboration",
+        items: [
+          { name: "Notion", role: "Documentation & Research Notes", icon: mark("/assets/About/Notion.svg", 24, 24), badge: "Daily Tool" },
+          { name: "Miro", role: "Collaborative Whiteboarding", badge: "Ideation" },
+          { name: "Loom", role: "Asynchronous Design Reviews", badge: "Handoff" },
+          { name: "Jira / Linear", role: "Sprint Tracking & Design QA", badge: "Management" },
+        ],
+      },
+      {
+        category: "AI & UX Workflow",
+        items: [
+          { name: "ChatGPT", role: "UX Copywriting & Research Synthesis", icon: mark("/assets/About/ChatGPT.svg", 24, 24), badge: "AI Assistant" },
+          { name: "Claude", role: "UX Logic & Structural Content", icon: mark("/assets/About/Claude.svg", 24, 24), badge: "AI Assistant" },
+          { name: "Gemini", role: "Multimodal Research & Ideation", icon: mark("/assets/About/Gemini.svg", 24, 24), badge: "AI Assistant" },
+          { name: "Midjourney & Relume", role: "AI Wireframing & Moodboards", badge: "Ideation" },
+        ],
+      },
+    ],
+  },
 } as const;
 
 export type Site = typeof site;
