@@ -9,7 +9,7 @@ import { Wordmark } from "./wordmark";
  * The footer as the last canvas.
  *
  * The decorative band that used to sit underneath the footer has been folded
- * into it, and its language — a designer's working surface — is rebuilt from
+ * into it, and its language — a designer's Projecting surface — is rebuilt from
  * the parts the site already owns: the 8px canvas grid, the tool glyphs from
  * the About export, a selection frame with corner handles, and measurement
  * chips reading the footer's own dimensions.
@@ -103,13 +103,13 @@ export function Footer() {
             </p>
           </div>
 
-          <nav aria-label="Selected work" className="lg:col-span-3">
-            <p className="font-mono text-micro uppercase text-graphite">Work</p>
+          <nav aria-label="Selected Project" className="lg:col-span-3">
+            <p className="font-mono text-micro uppercase text-graphite">Project</p>
             <ul className="mt-4 space-y-2">
               {projects.map((p) => (
                 <li key={p.slug}>
                   <Link
-                    href={`/work/${p.slug}`}
+                    href={`/Project/${p.slug}`}
                     className="hover-underline text-caption"
                   >
                     {p.title}

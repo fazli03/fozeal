@@ -296,7 +296,7 @@ export const projects: Project[] = [
       ),
     ],
     screens: [
-      screenGroup("work", "Projects & gallery", [
+      screenGroup("Project", "Projects & gallery", [
         image(
           "Mayang Mangurai Auto Variasi/detail project 1.webp",
           "browser",
@@ -307,12 +307,12 @@ export const projects: Project[] = [
         image(
           "Mayang Mangurai Auto Variasi/galery.webp",
           "browser",
-          "Gallery of completed work",
+          "Gallery of completed Project",
           1728,
           4327,
         ),
       ]),
-      screenGroup("work", "Service Detail", [
+      screenGroup("Project", "Service Detail", [
         image(
           "Mayang Mangurai Auto Variasi/Sevice Detail Screen.webp",
           "browser",
@@ -420,6 +420,95 @@ export const projects: Project[] = [
       ]),
     ],
   },
+  {
+    slug: "tracer-study",
+    index: "05",
+    title: "Tracer Study Universitas Jambi",
+    category: "Tracer Study Website",
+    accent: "184 50 42",
+    cover: image(
+      "Tracer Study/mockup Tracer Study.jpeg",
+      "bleed",
+      "Tracer Study website shown in a device mockup",
+      1448,
+      1086,
+    ),
+    preview: image(
+      "Tracer Study/mockup Tracer Study.png",
+      "bleed",
+      "Tracer Study website shown in a device mockup",
+      1195,
+      896,
+    ),
+    meta: {
+      ...meta("Business Profile Website"),
+      platform: "Web application",
+      role: ["UI Designer"],
+      tools: ["Figma"],
+      prototypeUrl:
+        "https://www.figma.com/proto/nq0xwUaQGvf59Gvs4iujQP/Tracer-Study?node-id=1036-9371&p=f&t=JOVqN0eON5ONvXSg-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1036%3A9371&show-proto-sidebar=1",
+      duration: "4 weeks",
+    },
+    problems: [
+      problem("p1", {
+        statement:
+          "The UNJA Career Center and Tracer Study website fails to provide sufficient value to alumni beyond administrative requirements.",
+        detail: [
+          "The main problem with the UNJA Career Center and Tracer Study website is that it primarily serves the university’s administrative needs rather than the ongoing career development needs of alumni. Most alumni access the website only to complete the Tracer Study as a graduation requirement and stop using it afterward because career information is limited, not consistently updated from the users’ perspective, and lacks useful features for finding job opportunities and building professional connections. Combined with confusing account activation, lengthy questionnaires, unclear navigation, and an outdated visual design, these issues reduce user engagement and discourage alumni from returning to the platform.",
+        ],
+      }),
+    ],
+    solutions: [
+      solution(
+        "s1",
+        "p1",
+        [
+          image(
+            "Mayang Mangurai Auto Variasi/Home Mayang Mangurai Auto Variasi.webp",
+            "browser",
+            "Full home page, top to bottom",
+            1728,
+            4993,
+          ),
+        ],
+        {
+          title:
+            "Transforming the UNJA Career Center and Tracer Study Website into an Engaging, User-Centered Career Development Platform",
+          detail: [
+            "The website should be redesigned to prioritize alumni needs by providing relevant and up-to-date career opportunities, simplifying account access and Tracer Study completion, improving navigation and visual design, and offering interactive alumni data management. This approach aims to create a more accessible, informative, and valuable platform that encourages continuous alumni engagement while supporting the university's monitoring and evaluation needs.",
+          ],
+        },
+      ),
+    ],
+    screens: [
+      screenGroup("Project", "Projects & gallery", [
+        image(
+          "Mayang Mangurai Auto Variasi/detail project 1.webp",
+          "browser",
+          "Project detail page",
+          1728,
+          2085,
+        ),
+        image(
+          "Mayang Mangurai Auto Variasi/galery.webp",
+          "browser",
+          "Gallery of completed Project",
+          1728,
+          4327,
+        ),
+      ]),
+      screenGroup("Project", "Service Detail", [
+        image(
+          "Mayang Mangurai Auto Variasi/Sevice Detail Screen.webp",
+          "browser",
+          "Project detail page",
+          1728,
+          2189,
+        ),
+      ]),
+    ],
+  },
+
 ];
 
 export const getProject = (slug: string) =>

@@ -38,12 +38,19 @@ export function Nav() {
         lifted && 'bg-porcelain/85 backdrop-blur-md',
       )}
     >
-      <div className="shell flex h-20 items-center justify-between">
-        <Link href="/" aria-label={`${site.name ?? site.nameFallback} — home`}>
+      <div className="shell grid h-20 grid-cols-[1fr_auto_1fr] items-center">
+        <Link
+          href="/"
+          aria-label={`${site.name ?? site.nameFallback} — home`}
+          className="col-start-1 justify-self-start"
+        >
           <Wordmark className="text-[1.0625rem] sm:text-lg" />
         </Link>
 
-        <nav aria-label="Primary" className="hidden items-center gap-10 md:flex">
+        <nav
+          aria-label="Primary"
+          className="col-start-2 hidden items-center gap-10 justify-self-center md:flex"
+        >
           {site.nav.map((item) => (
             <Link
               key={item.href}
@@ -58,7 +65,7 @@ export function Nav() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="-mr-2 flex h-10 w-10 items-center justify-center md:hidden"
+          className="col-start-3 -mr-2 flex h-10 w-10 items-center justify-center justify-self-end md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? 'Close menu' : 'Open menu'}
