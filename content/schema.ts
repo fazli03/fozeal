@@ -214,6 +214,8 @@ export interface Project {
   category: string
   /** Identity colour, applied as --accent across the case study. */
   accent: string
+  /** External case study URL (e.g. Figma design link). */
+  studyCaseUrl?: string
   /** The full-width image opening the case study. */
   cover: Asset
   /**

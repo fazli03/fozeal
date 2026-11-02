@@ -33,13 +33,11 @@ const summarize = (items: ReadonlyArray<any> = []) =>
 function IconCircle({ icon: Icon, active, large }: { icon: IconType; active: boolean; large?: boolean }) {
   return (
     <span
-      className={`flex shrink-0 items-center justify-center rounded-xl border transition-colors duration-300 ${
-        large ? "h-12 w-12" : "h-8 w-8"
-      } ${
-        active
+      className={`flex shrink-0 items-center justify-center rounded-xl border transition-colors duration-300 ${large ? "h-12 w-12" : "h-8 w-8"
+        } ${active
           ? "border-accent/30 bg-accent/10 text-accent"
           : "border-hairline bg-porcelain/60 text-graphite"
-      }`}
+        }`}
     >
       <Icon className={large ? "h-5 w-5" : "h-4 w-4"} aria-hidden="true" />
     </span>
@@ -170,10 +168,11 @@ export function ToolsSkills() {
         {/* Header */}
         <div className="mb-8 flex flex-wrap items-end justify-between gap-6 md:mb-10">
           <div className="max-w-xl">
-            <h2 className="font-display text-3xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-4xl md:text-5xl">
-              Skills and tools
+            <h2 className="font-display text-3xl uppercase leading-none tracking-tight sm:text-4xl md:text-5xl">
+              <span className="block text-accent">Skills</span>
+              <span className="block">and tools</span>
             </h2>
-            <p className="mt-3 font-display text-body leading-relaxed text-graphite">
+            <p className="mt-3 font-display leading-relaxed text-graphite">
               The methods I rely on, and the tools I use to turn them into shipped work.
             </p>
           </div>
@@ -193,7 +192,7 @@ export function ToolsSkills() {
                   const first = cards.find((c) => key === "all" || c.type === key);
                   if (first && !(active && (key === "all" || active.type === key))) setActiveId(first.id);
                 }}
-                className={`rounded-full px-3.5 py-1.5 font-display text-caption font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${filter === key
+                className={`rounded-full px-3.5 py-1.5 font-display Archivo font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${filter === key
                   ? "bg-accent text-paper"
                   : "text-graphite hover:bg-porcelain hover:text-foreground"
                   }`}

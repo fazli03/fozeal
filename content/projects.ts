@@ -23,16 +23,18 @@ export const projects: Project[] = [
     index: "01",
     title: "Santrendcode",
     category: "Coding Learning Platform",
-    accent: "23 107 74",
+    accent: "8 15 112",
+    studyCaseUrl:
+      "https://www.figma.com/design/yWUShqQNPB3TwG6cqpJDyB/SantrenCode?node-id=1-6&t=PTfwADMFZoF689yW-1",
     cover: image(
-      "SantrendCode/mockup SanC.png",
+      "SantrendCode/Hero - Mockup.png",
       "bleed",
       "Santrendcode coding learning platform shown across desktop mockups",
       1536,
       1024,
     ),
     preview: image(
-      "SantrendCode/preview sanc.png",
+      "SantrendCode/Hero - Mockup.png",
       "bleed",
       "Santrendcode preview",
       1536,
@@ -132,6 +134,8 @@ export const projects: Project[] = [
     title: "Pandu Divisi",
     category: "Recommendation Division Platform",
     accent: "91 52 232",
+    studyCaseUrl:
+      "https://www.figma.com/design/qpcSydeJKxJKOnrXZuR1XP/Pandu-Divisi?node-id=0-1&t=PTfwADMFZoF689yW-1",
     cover: image(
       "Pandu Divisi/mockup PD.png",
       "bleed",
@@ -240,7 +244,9 @@ export const projects: Project[] = [
     index: "03",
     title: "MM Auto Variasi",
     category: "Business Profile Website",
-    accent: "184 50 42",
+    accent: " 0 255 111",
+    studyCaseUrl:
+      "https://www.figma.com/design/EyMbvc0obU8oHUCdgcN0Av/MM-Auto-Variasi-Profile-Bisnis?node-id=0-1&t=PTfwADMFZoF689yW-1",
     cover: image(
       "Mayang Mangurai Auto Variasi/mockup MM.png",
       "bleed",
@@ -331,6 +337,8 @@ export const projects: Project[] = [
     title: "JalanKita",
     category: "Smart Mobility Application",
     accent: "11 124 140",
+    studyCaseUrl:
+      "https://www.figma.com/design/8rCq6iL07WKul6YnEfotGW/Jalan-Kita?node-id=1-12&t=PTfwADMFZoF689yW-1",
     cover: image(
       "Jalan Kita/mockup jk.png",
       "bleed",
@@ -426,6 +434,8 @@ export const projects: Project[] = [
     title: "Tracer Study Universitas Jambi",
     category: "Tracer Study Website",
     accent: "184 50 42",
+    studyCaseUrl:
+      "https://www.figma.com/design/UgEcLeUCQZujnKCJ0dYabR/Redesign-Tracer-Study?node-id=0-1&t=PTfwADMFZoF689yW-1",
     cover: image(
       "Tracer Study/mockup Tracer Study.jpeg",
       "bleed",

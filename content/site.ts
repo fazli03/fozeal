@@ -15,7 +15,7 @@ export const site = {
   name: "FOZEAL" as Sourced<string>,
   nameFallback: "FOZEAL",
   author: "Fazli Maulana",
-  role: "UI/UX Designer",
+  role: "Product Digital Designer",
   location: "Depok, West Java, Indonesia",
   email: EMAIL as Sourced<string>,
   composeUrl: gmailComposeUrl(EMAIL),
@@ -24,7 +24,7 @@ export const site = {
   thesis:
     "The best interfaces are the ones people never have to think about.",
 
-  availability: "Open to UI/UX design roles and freelance work",
+  availability: "Open to Product Digital Designer roles and freelance work",
 
   nav: [
     { href: "/about", label: "About" },
@@ -57,13 +57,6 @@ export const site = {
       kind: "phone",
       href: "https://wa.me/6289673494419?text=Hello%20Fazli,%20I%20came%20across%20your%20UI/UX%20portfolio%20and%20was%20impressed%20by%20your%20work.%20I'd%20love%20to%20connect%20and%20discuss%20a%20potential%20opportunity%20with%20you.",
       icon: mark("/assets/Footer/Phone.svg"),
-    },
-    {
-      label: "CV",
-      kind: "download",
-      href: "/cv/cv-fazli-maulana.pdf",
-      fileName: "CV Fazli Maulana.pdf",
-      icon: mark("/assets/Footer/file-cv 1.svg"),
     },
   ],
 
@@ -140,39 +133,37 @@ export const site = {
     skills: [
       {
         no: "01",
-        category: "UX Research & Information Architecture",
+        category: "UX Research ",
         tag: "UNDERSTAND & STRUCTURE",
         description:
           "Understanding user needs, identifying pain points, and structuring digital experiences before moving into interface design.",
         items: [
           {
             name: "User Persona",
-            level: "Practiced",
             desc: "Representing user characteristics, goals, and pain points.",
           },
           {
             name: "User Journey Mapping",
-            level: "Practiced",
             desc: "Mapping user experiences, needs, and challenges across key stages.",
           },
           {
             name: "User Flow",
-            level: "Confident",
             desc: "Defining clear navigation paths and task completion steps.",
           },
           {
-            name: "Information Architecture",
-            level: "Practiced",
-            desc: "Organizing content and navigation into understandable structures.",
-          },
-          {
             name: "Problem Definition",
-            level: "Practiced",
             desc: "Translating user problems into design opportunities.",
           },
           {
+            name: "Design Thinking",
+            desc: "Applying a structured process to understand problems, explore ideas, and test solutions.",
+          },
+          {
+            name: "Design Iteration",
+            desc: "Refining interface concepts through feedback and usability findings.",
+          },
+          {
             name: "Usability Testing",
-            level: "Confident",
             desc: "Using Think Aloud testing to observe interactions and identify usability issues.",
           },
         ],
@@ -186,62 +177,28 @@ export const site = {
         items: [
           {
             name: "Wireframing",
-            level: "Confident",
+
             desc: "Exploring screen layouts and content hierarchy from low to high fidelity.",
           },
           {
             name: "High-Fidelity UI Design",
-            level: "Confident",
             desc: "Creating detailed interfaces with considered typography, color, and layout.",
           },
           {
             name: "Interactive Prototyping",
-            level: "Confident",
             desc: "Connecting screens and interactions to communicate product behavior.",
           },
           {
             name: "Visual Hierarchy",
-            level: "Practiced",
             desc: "Using layout, typography, and contrast to guide user attention.",
           },
           {
             name: "Responsive Web Design",
-            level: "Confident",
             desc: "Designing web experiences that adapt to different screen sizes.",
           },
           {
             name: "Design Systems",
-            level: "Practiced",
             desc: "Applying reusable components and consistent styles across interfaces.",
-          },
-        ],
-      },
-      {
-        no: "03",
-        category: "Product Design & Collaboration",
-        tag: "THINK & DELIVER",
-        description:
-          "Connecting design decisions with user goals while considering implementation constraints and collaborating across disciplines.",
-        items: [
-          {
-            name: "Design Thinking",
-            level: "Practiced",
-            desc: "Applying a structured process to understand problems, explore ideas, and test solutions.",
-          },
-          {
-            name: "Design Iteration",
-            level: "Practiced",
-            desc: "Refining interface concepts through feedback and usability findings.",
-          },
-          {
-            name: "Developer Collaboration",
-            level: "Practiced",
-            desc: "Working across UI/UX and web development tasks to bring concepts closer to implementation.",
-          },
-          {
-            name: "Design-to-Code",
-            level: "Practiced",
-            desc: "Translating interface designs into web layouts using HTML, CSS, and Webflow.",
           },
         ],
       },
@@ -250,6 +207,8 @@ export const site = {
     tools: [
       {
         category: "UI Design & Prototyping",
+        description:
+          "My Design Tools",
         items: [
           {
             name: "Figma",
@@ -258,8 +217,14 @@ export const site = {
             badge: "Primary Tool",
           },
           {
+            name: "Emergent",
+            role: "Early UI Concepts & interaction Exploration",
+            icon: mark("/assets/About/emergent.jpg", 24, 24),
+            badge: "AI UI Design",
+          },
+          {
             name: "Stitch",
-            role: "Early UI Concepts & Interface Exploration",
+            role: "Early UI Concepts",
             icon: mark("/assets/About/Stitch.jpeg", 24, 24),
             badge: "AI UI Design",
           },
@@ -267,6 +232,8 @@ export const site = {
       },
       {
         category: "Web Development",
+        description:
+          "Tech stack that I use in web development",
         items: [
           {
             name: "HTML & CSS",
@@ -302,6 +269,8 @@ export const site = {
       },
       {
         category: "AI-Assisted Workflow",
+        description:
+          "My AI assistants in design and development",
         items: [
           {
             name: "ChatGPT",

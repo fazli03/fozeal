@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { useRef, useState } from 'react'
 import { motion, useMotionValue, useSpring, AnimatePresence } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
@@ -69,8 +68,10 @@ export function WorkIndex() {
         <ul className="border-t border-hairline">
           {projects.map((project, i) => (
             <li key={project.slug} style={accentStyle(project.accent)}>
-              <Link
-                href={`/work/${project.slug}`}
+              <a
+                href={project.studyCaseUrl ?? `/work/${project.slug}`}
+                target={project.studyCaseUrl ? '_blank' : undefined}
+                rel={project.studyCaseUrl ? 'noopener noreferrer' : undefined}
                 onMouseEnter={() => setActive(i)}
                 onMouseLeave={() => setActive(null)}
                 onFocus={() => setActive(i)}
@@ -109,7 +110,7 @@ export function WorkIndex() {
                 <div className="shell pb-8 lg:hidden">
                   <AssetFrame asset={project.preview ?? project.cover} sizes="100vw" />
                 </div>
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

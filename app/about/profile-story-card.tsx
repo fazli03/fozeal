@@ -41,11 +41,11 @@ const STEP_MS = 1000 / 60;
 
 // ... (Pt, mk, clamp, smoothPath, BARS unchanged) ...
 
-const DISPLAY_NAME = "Your Name";
-const ROLE = "Product Designer";
+const DISPLAY_NAME = "Fazli Maulana";
+const ROLE = "Product Digital Designer";
 const LOCATION = "Depok, West Java, ID";
 const BADGE_ID = "UX-2026-001";
-const STRAP_TEXT = "PRODUCT DESIGNER  •  UI/UX  •  AI WORKFLOWS  •  ";
+const STRAP_TEXT = "• PRODUCT DIGITAL DESIGN  •  UI/UX •";
 
 const CAPABILITIES: { icon: LucideIcon; title: string; desc: string }[] = [
     {
@@ -447,6 +447,94 @@ export function Lanyard() {
                     className="absolute flex flex-col overflow-hidden rounded-[26px] border border-white/10 bg-gradient-to-b from-stone-800 to-stone-950 p-4 pt-9 text-stone-100 shadow-[0_40px_70px_-20px_rgba(0,0,0,0.6)]"
                     style={{ left: -CARD_W / 2, top: CLIP_H, width: CARD_W, height: CARD_H }}
                 >
+                    {/* Background Watermark: FOZEAL pattern filling the entire card */}
+                    <div
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-0 select-none overflow-hidden rounded-[26px]"
+                    >
+                        {/* Diagonal repeating pattern across the entire card */}
+                        <svg className="absolute -inset-16 h-[calc(100%+128px)] w-[calc(100%+128px)] opacity-[0.08]">
+                            <defs>
+                                <pattern
+                                    id={`${uid}-watermark`}
+                                    width="130"
+                                    height="48"
+                                    patternUnits="userSpaceOnUse"
+                                    patternTransform="rotate(-25)"
+                                >
+                                    <text
+                                        x="0"
+                                        y="18"
+                                        fill="#ffffff"
+                                        fontFamily="var(--font-display), 'Archivo', sans-serif"
+                                        fontWeight="800"
+                                        fontSize="11"
+                                        letterSpacing="0.22em"
+                                    >
+                                        FOZEAL
+                                    </text>
+                                    <rect
+                                        x="76"
+                                        y="12.5"
+                                        width="4"
+                                        height="4"
+                                        transform="rotate(45 78 14.5)"
+                                        fill="rgb(var(--accent))"
+                                    />
+                                    <text
+                                        x="65"
+                                        y="42"
+                                        fill="#ffffff"
+                                        fontFamily="var(--font-display), 'Archivo', sans-serif"
+                                        fontWeight="800"
+                                        fontSize="11"
+                                        letterSpacing="0.22em"
+                                    >
+                                        FOZEAL
+                                    </text>
+                                    <rect
+                                        x="141"
+                                        y="36.5"
+                                        width="4"
+                                        height="4"
+                                        transform="rotate(45 143 38.5)"
+                                        fill="rgb(var(--accent))"
+                                    />
+                                    <rect
+                                        x="11"
+                                        y="36.5"
+                                        width="4"
+                                        height="4"
+                                        transform="rotate(45 13 38.5)"
+                                        fill="rgb(var(--accent))"
+                                    />
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill={`url(#${uid}-watermark)`} />
+                        </svg>
+
+                        {/* Large giant faint watermark across the card */}
+                        <div
+                            className="absolute -bottom-8 -right-8 select-none font-display text-[88px] font-black uppercase tracking-[0.18em] text-white/[0.045] leading-none"
+                            style={{ transform: "rotate(-22deg)" }}
+                        >
+                            FOZEAL
+                        </div>
+
+                        {/* Subtle ambient lighting for card depth */}
+                        <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 via-transparent to-white/[0.02]" />
+                    </div>
+
+                    {/* Subtle security watermark overlay across the card surface */}
+                    <div
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-0 z-10 overflow-hidden rounded-[26px] opacity-[0.045] mix-blend-screen"
+                    >
+                        <svg className="absolute -inset-16 h-[calc(100%+128px)] w-[calc(100%+128px)]">
+                            <rect width="100%" height="100%" fill={`url(#${uid}-watermark)`} />
+                        </svg>
+                    </div>
+
                     {/* clip slot */}
                     <div className="absolute left-1/2 top-3 flex h-3.5 w-16 -translate-x-1/2 items-center justify-center rounded-full border border-stone-700 bg-stone-950 shadow-inner">
                         <div className="h-1 w-7 rounded-full bg-stone-800" />

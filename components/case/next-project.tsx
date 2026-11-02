@@ -1,13 +1,20 @@
-import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import type { Project } from '@/content/schema'
 import { FrameLabel } from '@/components/system/frame'
 import { accentStyle } from '@/lib/utils'
 
 export function NextProject({ project }: { project: Project }) {
+  const isExternal = Boolean(project.studyCaseUrl)
+  const href = project.studyCaseUrl ?? `/work/${project.slug}`
+
   return (
     <section style={accentStyle(project.accent)} className="border-t border-hairline">
-      <Link href={`/work/${project.slug}`} className="group block py-section-sm">
+      <a
+        href={href}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
+        className="group block py-section-sm"
+      >
         <div className="shell">
           <FrameLabel meta={project.index} className="mb-8">
             Next project
@@ -29,7 +36,7 @@ export function NextProject({ project }: { project: Project }) {
             </span>
           </div>
         </div>
-      </Link>
+      </a>
     </section>
   )
 }

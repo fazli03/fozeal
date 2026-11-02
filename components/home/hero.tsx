@@ -7,7 +7,7 @@ import { FrameLabel, Measure } from "@/components/system/frame";
 import { ease, duration } from "@/lib/motion";
 
 export function Hero() {
-  const words = ["UI/UX", "Designer"];
+  const words = ["Product Digital", "Designer"];
 
   return (
     <section className="relative overflow-hidden pb-10 pt-24 md:pb-14 md:pt-4">
@@ -55,7 +55,7 @@ export function Hero() {
               transition={{ duration: duration.base, ease, delay: 0.55 }}
               className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-hairline pt-6"
             >
-              <Measure>UI / UX</Measure>
+
               <span className="font-mono text-micro uppercase text-graphite">
                 {site.author}
               </span>
